@@ -1,0 +1,149 @@
+
+
+QDialog#Communication_Dialog{  
+	border-radius:15px;
+}  
+
+QLabel#communication_title_label{
+	font:Bold 25px;
+	font-family: "仿宋";
+}
+
+QWidget#communication_top_widget
+{
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	border-bottom: 1px solid #f5f5f5;
+	background:#afdfe4;		   
+}
+
+QWidget#communication_content_widget
+{
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	/*border-image:url(./image/main.jpg);	*/		
+	background:#FAFAD2;	   
+}
+
+QPushButton#communication_close_pushButton{
+	border:none;
+	border-image:url(./image/btn_close_normal.png); 
+}
+
+QPushButton#communication_close_pushButton::hover{
+	background:none;
+	border:none;
+	height:16px;
+	width:16px;
+	background:#eaeaea;
+}
+QPushButton#communication_close_pushButton::pressed{
+	background:none;
+	border:none;
+	background:#eaeaea;
+	border-image:url(./image/btn_close_hover.png); 
+}
+
+ 
+QLabel#device_type_label{
+	font:20px;
+	font-family:"仿宋";
+
+}
+
+QLabel#baudrate_label{
+	font:20px;
+	font-family:"仿宋";
+
+}
+
+QLabel#device_index_label{
+	font:20px;
+	font-family:"仿宋";
+
+}
+
+QLabel#can_channel_label{
+	font:20px;
+	font-family:"仿宋";
+
+}
+
+QLabel#device_type_content{
+	font:20px;
+	font-family:"仿宋";
+
+}
+
+QLabel#baudrate_content{
+	font:20px;
+	font-family:"仿宋";
+
+}
+
+
+QComboBox {
+	width: 150px;
+	height: 25px;
+	border-radius: 3px;
+	
+	font: 15px;
+	font-family:"System";
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+ 
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+ 
+QComboBox::down-arrow {
+    image: url(./image/arrow_down_normal.png);
+}
+
+
+
+QComboBox QAbstractItemView  
+{  
+	border-radius: 3px;
+	border:none;
+	background:#f5f5f5;	
+}  
+
+QComboBox QAbstractItemView::focus
+{  
+     outline: none;
+}
+  
+QComboBox QAbstractItemView::item  
+{  
+    height: 25px;  
+}  
+  
+QComboBox QAbstractItemView::item:selected  
+{     
+	background:#2CA7F8;	
+}  
+
+QPushButton#commucation_sure_pushButton {
+	background-color: #A4D3EE;
+	border-style: outset;
+	border-width:1px;
+	border-radius:5px;
+	border-color: #dddddd;
+	font:Bold 20px;
+	font-family: "仿宋";
+	min-width:10em;
+	padding:6px;
+}
+QPushButton#commucation_sure_pushButton:pressed {
+	background-color: #9AC0CD;
+	border-style: inset;
+}

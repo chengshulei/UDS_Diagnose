@@ -1,0 +1,7 @@
+QWidget
+{
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	/*border-image:url(./image/main.jpg);	*/		
+	background:#FAFAD2;	   
+}

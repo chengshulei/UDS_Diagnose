@@ -1,0 +1,432 @@
+﻿{
+"Function":[
+{"Index":"ReadECUInf","Name":"控制器信息","Type":"0"},
+{"Index":"ReadDataStream","Name":"实时数据","Type":"0"},
+{"Index":"DtcInf","Name":"故障数据","Type":"0"},
+{"Index":"SpecialFunction","Name":"特殊功能","Type":"0"}
+],
+"String_Show":[
+{"Caption_ID":"ID_01","Caption":"电机目标转速"},
+{"Caption_ID":"ID_02","Caption":"电机实际转速"},
+{"Caption_ID":"ID_03","Caption":"电机目标扭矩"},
+{"Caption_ID":"ID_04","Caption":"电机实际扭矩"},
+{"Caption_ID":"ID_05","Caption":"母线电压"},
+{"Caption_ID":"ID_06","Caption":"母线电流"},
+{"Caption_ID":"ID_07","Caption":"MCU状态"},
+{"Caption_ID":"ID_08","Caption":"系统状态"},
+{"Caption_ID":"ID_09","Caption":"控制模式"},
+{"Caption_ID":"ID_10","Caption":"电机转向"},
+{"Caption_ID":"ID_11","Caption":"驱动"},
+{"Caption_ID":"ID_12","Caption":"PWM开"},
+{"Caption_ID":"ID_13","Caption":"故障"},
+{"Caption_ID":"ID_14","Caption":"交流有效值"},
+{"Caption_ID":"ID_15","Caption":"电机温度"},
+{"Caption_ID":"ID_16","Caption":"控制器温度"},
+{"Caption_ID":"ID_17","Caption":"最大驱动扭矩"},
+{"Caption_ID":"ID_18","Caption":"最大制动扭矩"},
+{"Caption_ID":"ID_19","Caption":"输出电压"},
+{"Caption_ID":"ID_28","Caption":"电控单元引导加载软件参考号"},
+{"Caption_ID":"ID_29","Caption":"当前的诊断会话模式"},
+{"Caption_ID":"ID_30","Caption":"电控单元零件号"},
+{"Caption_ID":"ID_31","Caption":"系统供应商标识号"},
+{"Caption_ID":"ID_32","Caption":"电控单元制造日期"},
+{"Caption_ID":"ID_33","Caption":"供应商电控单元序列号"},
+{"Caption_ID":"ID_34","Caption":"车辆识别代码"},
+{"Caption_ID":"ID_35","Caption":"供应商软件版本号"},
+{"Caption_ID":"ID_36","Caption":"ECU系统名称"},
+{"Caption_ID":"ID_37","Caption":"测试仪序列号"},
+{"Caption_ID":"ID_38","Caption":"软件刷新日期"},
+{"Caption_ID":"ID_44","Caption":"电机过流故障"},
+{"Caption_ID":"ID_45","Caption":"控制器过温故障"},
+{"Caption_ID":"ID_46","Caption":"旋变硬件故障"},
+{"Caption_ID":"ID_47","Caption":"相电流传感器故障"},
+{"Caption_ID":"ID_48","Caption":"超速故障"},
+{"Caption_ID":"ID_49","Caption":"电机过温故障"},
+{"Caption_ID":"ID_50","Caption":"母线过压故障"},
+{"Caption_ID":"ID_51","Caption":"驱动电机温度过低"},
+{"Caption_ID":"ID_52","Caption":"控制器温度传感器故障"},
+{"Caption_ID":"ID_53","Caption":"电机温度传感器故障"},
+{"Caption_ID":"ID_54","Caption":"母线电压传感器故障"},
+{"Caption_ID":"ID_55","Caption":"母线欠压故障"},
+{"Caption_ID":"ID_56","Caption":"12V欠压故障"},
+{"Caption_ID":"ID_57","Caption":"电机缺相故障"},
+{"Caption_ID":"ID_58","Caption":"堵转故障"},
+{"Caption_ID":"ID_59","Caption":"CAN故障"},
+{"Caption_ID":"ID_60","Caption":"VCU通讯失联故障"},
+{"Caption_ID":"ID_63","Caption":"读ECU故障"},
+{"Caption_ID":"ID_67","Caption":"读故障码个数"},
+{"Caption_ID":"ID_68","Caption":"读快照信息"},
+{"Caption_ID":"ID_69","Caption":"清除全部故障码"},
+{"Caption_ID":"ID_70","Caption":"故障码时间状态"},
+{"Caption_ID":"ID_71","Caption":"软件复位"},
+{"Caption_ID":"ID_72","Caption":"故障排序"}
+],
+"FaultCauses":[
+{"FaultCauses_ID":"ID_00","Caption":"瞬间电流超过设定值"},
+{"FaultCauses_ID":"ID_01","Caption":"风道循环存在问题"},
+{"FaultCauses_ID":"ID_02","Caption":"旋变的线路连接问题"},
+{"FaultCauses_ID":"ID_03","Caption":"采样信号收到干扰或某元器件损坏"},
+{"FaultCauses_ID":"ID_04","Caption":"旋变损坏或者下坡车速过快"},
+{"FaultCauses_ID":"ID_05","Caption":"风道循环存在问题"},
+{"FaultCauses_ID":"ID_06","Caption":"运行期间电压出现大的波动，或电池输出不稳定，电机控制器检测出现偏差"},
+{"FaultCauses_ID":"ID_07","Caption":"环境温度低于-40℃或电机温度传感器线束断路"},
+{"FaultCauses_ID":"ID_08","Caption":"采样信号收到干扰或某元器件损坏"},
+{"FaultCauses_ID":"ID_09","Caption":"电机温度传感器线束短路或断路，或信号采样问题，或干扰问题"},
+{"FaultCauses_ID":"ID_10","Caption":"采样信号收到干扰或某元器件损坏或母线电压过高"},
+{"FaultCauses_ID":"ID_11","Caption":"正常工作期间高压丢失"},
+{"FaultCauses_ID":"ID_12","Caption":"正常工作期间高压丢失"},
+{"FaultCauses_ID":"ID_13","Caption":"电机三相线断开"},
+{"FaultCauses_ID":"ID_14","Caption":"扭矩、电流很大但是电机不能正常运转"},
+{"FaultCauses_ID":"ID_15","Caption":"节点总线关闭，无法收发报文"},
+{"FaultCauses_ID":"ID_16","Caption":"干扰原因、线路上原因或阻值等方面的原因"}
+],
+"CorrecticveAction":[
+{"CorrecticveAction_ID":"ID_00","Caption":"1、查看快照数据进行分析；2、查看输出交流电流有效值，如果输出电流大于预设值可能导致电流故障；3、查看母线电压值，如果当前母线电压过低可能导致过流故障；4、查看电机转速，如果电机转速超出范围可能导致过流；5、若控制器重启后仍不能行驶，将控制器电机三相线断开，万用表调到二极管档，红表笔测外部接线端子“-”，黑表笔分别测外部接线端子U,V,W，电压范围应在0.3-0.6V以内；再将黑表笔接外部接线端子“+”，红表笔分别接触外部接线端U,V,W，电压范围也应在0.3-0.6V以内，否则说明控制器损坏需返厂。"},
+{"CorrecticveAction_ID":"ID_01","Caption":"检查风扇是否开启"},
+{"CorrecticveAction_ID":"ID_02","Caption":"检测旋变硬件上的线束是否正常"},
+{"CorrecticveAction_ID":"ID_03","Caption":"更换控制器"},
+{"CorrecticveAction_ID":"ID_04","Caption":"停车查看转速是否正常"},
+{"CorrecticveAction_ID":"ID_05","Caption":"检查风扇是否开启"},
+{"CorrecticveAction_ID":"ID_06","Caption":"检查电池电压"},
+{"CorrecticveAction_ID":"ID_07","Caption":"若环境温度正常，检查电机温度传感器线束有无断路，若线束正常，更换控制器"},
+{"CorrecticveAction_ID":"ID_08","Caption":"更换控制器"},
+{"CorrecticveAction_ID":"ID_09","Caption":"检查电机温度传感器线束有无短路或断路，若线束正常，更换控制器"},
+{"CorrecticveAction_ID":"ID_10","Caption":"检查电池电压，如电压正常则更换控制器"},
+{"CorrecticveAction_ID":"ID_11","Caption":"检查电池电压"},
+{"CorrecticveAction_ID":"ID_12","Caption":"检查12V电源"},
+{"CorrecticveAction_ID":"ID_13","Caption":"检查电机三相线与控制器连接是否正常"},
+{"CorrecticveAction_ID":"ID_14","Caption":"检查变速箱；检查旋变是否正常：无旋变故障提示情况下，转动车轮看是否有转速反馈"},
+{"CorrecticveAction_ID":"ID_15","Caption":"检查收发器，CAN High/Low"},
+{"CorrecticveAction_ID":"ID_16","Caption":"先检测终端电阻，再检测具体节点发送接收报文是否正常"}
+],
+"Content":
+{
+"ID_00":[
+{"Signal_Value":"0","Show":"无效"},
+{"Signal_Value":"1","Show":"预充"},
+{"Signal_Value":"2","Show":"待机"},
+{"Signal_Value":"3","Show":"运行"},
+{"Signal_Value":"4","Show":"停机"},
+{"Signal_Value":"5","Show":"Invalid"},
+{"Signal_Value":"6","Show":"Invalid"},
+{"Signal_Value":"7","Show":"Invalid"}
+],
+"ID_01":[
+{"Signal_Value":"0","Show":"扭矩控制模式"},
+{"Signal_Value":"1","Show":"速度控制模式"}
+],
+"ID_02":[
+{"Signal_Value":"0","Show":"停车"},
+{"Signal_Value":"1","Show":"正转"},
+{"Signal_Value":"2","Show":"反转"},
+{"Signal_Value":"3","Show":"错误"}
+],
+"ID_03":[
+{"Signal_Value":"0","Show":"停车"},
+{"Signal_Value":"1","Show":"驱动"},
+{"Signal_Value":"2","Show":"制动"},
+{"Signal_Value":"3","Show":"错误"}
+],
+"ID_04":[
+{"Signal_Value":"0","Show":"开"},
+{"Signal_Value":"1","Show":"关"}
+],
+"ID_05":[
+{"Signal_Value":"0","Show":"有故障"},
+{"Signal_Value":"1","Show":"无故障"}
+],
+"ID_06":[
+{"Signal_Value":"1","Show":"当前"},
+{"Signal_Value":"0","Show":"历史"}
+]
+},
+"SendCommand":[
+{"SendCommand_ID":"CMD190100","Frame_ID":"0x731","Length":"8","Data":"0x03 0x19 0x01 0xFF 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD190200","Frame_ID":"0x731","Length":"8","Data":"0x03 0x19 0x02 0xFF 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD190400","Frame_ID":"0x731","Length":"8","Data":"0x06 0x19 0x04 3|(FaultCode) 0x00 0x00"},
+{"SendCommand_ID":"CMD19AA00","Frame_ID":"0x731","Length":"8","Data":"0x03 0x19 0xAA 0xFF 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD140000","Frame_ID":"0x731","Length":"8","Data":"0x04 0x14 0xFF 0xFF 0xFF 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F183","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x83 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F186","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x86 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F187","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x87 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F18A","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x8A 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F18B","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x8B 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F18C","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x8C 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F190","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x90 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F195","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x95 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F197","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x97 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F198","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x98 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD22F199","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0xF1 0x99 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220101","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x01 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220102","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x02 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220103","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x03 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220104","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x04 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220105","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x05 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220106","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x06 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220107","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x07 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220108","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x08 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220109","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x09 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220110","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x10 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220111","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x11 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220112","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x12 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD220113","Frame_ID":"0x731","Length":"8","Data":"0x03 0x22 0x01 0x13 0x00 0x00 0x00 0x00"},
+{"SendCommand_ID":"CMD2EF198","Frame_ID":"0x731","Length":"8","Data":"0x10 0x0D 0x2E 0xF1 0x98 3|(TesterSN1)"},
+{"SendCommand_ID":"CMDF19821","Frame_ID":"0x731","Length":"8","Data":"0x21 7|(TesterSN2)"},
+{"SendCommand_ID":"CMD6EF199","Frame_ID":"0x731","Length":"8","Data":"0x06 0x2E 0xF1 0x99 3|(ProgramYearMonthDay) 0x00"},
+{"SendCommand_ID":"CMD2EF190","Frame_ID":"0x731","Length":"8","Data":"0x10 0x14 0x2E 0xF1 0x90 3|(VinCode1)"},
+{"SendCommand_ID":"CMDF19021","Frame_ID":"0x731","Length":"8","Data":"0x21 7|(VinCode2)"},
+{"SendCommand_ID":"CMDF19022","Frame_ID":"0x731","Length":"8","Data":"0x22 7|(VinCode3)"},
+{"SendCommand_ID":"CMD110100","Frame_ID":"0x731","Length":"8","Data":"0x02 0x11 0x01 0x00 0x00 0x00 0x00 0x00"}
+],
+"SpecialReceiveCommand":[
+{"ReceiveCommand_ID":"CMD620101","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x01"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"01"}
+]},
+{"ReceiveCommand_ID":"CMD620102","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x02"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"02"}
+]},
+{"ReceiveCommand_ID":"CMD620103","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x03"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"03"}
+]},
+{"ReceiveCommand_ID":"CMD620104","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x04"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"04"}
+]},
+{"ReceiveCommand_ID":"CMD620105","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x05"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"05"}
+]},
+{"ReceiveCommand_ID":"CMD620106","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x06"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"06"}
+]},
+{"ReceiveCommand_ID":"CMD620107","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x07"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"07"},
+{"ByteAnalyse_ID":"08"},
+{"ByteAnalyse_ID":"09"},
+{"ByteAnalyse_ID":"10"},
+{"ByteAnalyse_ID":"11"},
+{"ByteAnalyse_ID":"12"}
+]},
+{"ReceiveCommand_ID":"CMD620108","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x08"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"13"}
+]},
+{"ReceiveCommand_ID":"CMD620109","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x09"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"14"}
+]},
+{"ReceiveCommand_ID":"CMD620110","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x10"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"15"}
+]},
+{"ReceiveCommand_ID":"CMD620111","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x11"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"16"}
+]},
+{"ReceiveCommand_ID":"CMD620112","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x12"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"17"}
+]},
+{"ReceiveCommand_ID":"CMD620113","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0x01 0x13"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"18"}
+]},
+{"ReceiveCommand_ID":"CMD62F183","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x83"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"19"}
+]},
+{"ReceiveCommand_ID":"CMD62F186","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x86"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"20"}
+]},
+{"ReceiveCommand_ID":"CMD62F187","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x87"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"21"}
+]},
+{"ReceiveCommand_ID":"CMD62F18A","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x8A"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"22"}
+]},
+{"ReceiveCommand_ID":"CMD62F18B","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x8B"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"23"}
+]},
+{"ReceiveCommand_ID":"CMD62F18C","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x8C"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"24"}
+]},
+{"ReceiveCommand_ID":"CMD62F190","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x90"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"25"}
+]},
+{"ReceiveCommand_ID":"CMD62F195","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x95"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"26"}
+]},
+{"ReceiveCommand_ID":"CMD62F197","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x97"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"27"}
+]},
+{"ReceiveCommand_ID":"CMD62F198","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x98"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"28"}
+]},
+{"ReceiveCommand_ID":"CMD62F199","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x62 0xF1 0x99"}],
+"DataAnalyse":[
+{"ByteAnalyse_ID":"29"}
+]},
+{"ReceiveCommand_ID":"CMD590100","Frame_ID":"0x739","Length":"8",
+"DataConfirm":[
+{"Byte_Offset":"0","Byte_Number":"2","Byte":"0x59 0x01"},
+{"Byte_Offset":"4","Byte_Number":"2","Byte":"(FaultNum)"}
+],
+"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD590200","Frame_ID":"0x739","Length":"FaultCodeFrameNum",
+"DataConfirm":[
+{"Byte_Offset":"0","Byte_Number":"2","Byte":"0x59 0x02"},
+{"Byte_Offset":"3","Byte_Number":"(FaultCodeLength)","Byte":"(FaultCode)"}
+],
+"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD59AA00","Frame_ID":"0x739","Length":"FaultSortFrameNum",
+"DataConfirm":[
+{"Byte_Offset":"0","Byte_Number":"2","Byte":"0x59 0xAA"},
+{"Byte_Offset":"3","Byte_Number":"(FaultSortLength)","Byte":"(FaultSort)"}
+],
+"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD590400","Frame_ID":"0x739","Length":"8",
+"DataConfirm":[
+{"Byte_Offset":"0","Byte_Number":"2","Byte":"0x59 0x04"},
+{"Byte_Offset":"2","Byte_Number":"(SnapshotLength)","Byte":"(Snapshot)"}
+],
+"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD540000","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"0","Byte_Number":"1","Byte":"0x54"}],"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD510100","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"2","Byte":"0x51 0x01"}],"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD300000","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"0","Byte_Number":"1","Byte":"0x30"}],"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD6EF190","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x6E 0xF1 0x90"}],"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD6EF198","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x6E 0xF1 0x98"}],"DataAnalyse":[]},
+{"ReceiveCommand_ID":"CMD6EF199","Frame_ID":"0x739","Length":"8","DataConfirm":[{"Byte_Offset":"1","Byte_Number":"3","Byte":"0x6E 0xF1 0x99"}],"DataAnalyse":[]}
+],
+"FaultCode":
+{"StartBYTE_index":"3","Byte_Length":"4","Data":"3|(FaultCode) 1|(ByteAnalyseData)","CircleTimes":"(FaultCodeNum)"},
+"FaultSort":
+{"StartBYTE_index":"3","Byte_Length":"6","Data":"3|(FaultCode) 1|(ByteAnalyseData) 1|(FaultTimes) 1|(FaultOrder)","CircleTimes":"(FaultSortNum)"},
+"ByteAnalyseData":
+{"ByteAnalyse_ID":"30"},
+"Snapshot":
+{"StartBYTE_index":"2","Byte_Length":"(SnapshotLength)","Data":[{"Byte_Offset":"0","Byte_Number":"0","Byte":"(Snapshot_index)"},{"Byte_Offset":"0","Byte_Number":"0","Byte":"(DID_num)"},{"Byte_Offset":"0","Byte_Number":"(SnapshotDIDLength)","Byte":"(SnapshotDID)"}],"CircleTimes":"(SnapshotNum)"},
+"SnapshotDID":
+{"StartBYTE_index":"(SnapshotDIDStartAddress)","Byte_Length":"(SnapshotDIDLength)","Data":[{"Byte_Offset":"0","Byte_Number":"2","Byte":"(SnapshotDID)"},{"Byte_Offset":"2","Byte_Number":"(SnapshotDIDLength)","Byte":"(SnapshotDID_Data)"}]},
+"ByteAnalyse":[
+{"ByteAnalyse_ID":"01","Caption_ID":"ID_01","Caculate_Type":"Numerical","Unit":"rpm","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.25","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"02","Caption_ID":"ID_02","Caculate_Type":"Numerical","Unit":"rpm","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.25","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"03","Caption_ID":"ID_03","Caculate_Type":"Numerical","Unit":"nm","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.01","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"04","Caption_ID":"ID_04","Caculate_Type":"Numerical","Unit":"nm","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.01","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"05","Caption_ID":"ID_05","Caculate_Type":"Numerical","Unit":"V","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.01","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"06","Caption_ID":"ID_06","Caculate_Type":"Numerical","Unit":"A","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.01","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"07","Caption_ID":"ID_08","Caculate_Type":"State","Unit":"","StartBit":"0","BitLength":"3","InvalidValue":"","Formula":"","ContentID":"ID_00","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"08","Caption_ID":"ID_09","Caculate_Type":"State","Unit":"","StartBit":"3","BitLength":"1","InvalidValue":"","Formula":"","ContentID":"ID_01","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"09","Caption_ID":"ID_10","Caculate_Type":"State","Unit":"","StartBit":"4","BitLength":"2","InvalidValue":"","Formula":"","ContentID":"ID_02","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"10","Caption_ID":"ID_11","Caculate_Type":"State","Unit":"","StartBit":"6","BitLength":"2","InvalidValue":"","Formula":"","ContentID":"ID_03","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"11","Caption_ID":"ID_12","Caculate_Type":"State","Unit":"","StartBit":"8","BitLength":"1","InvalidValue":"","Formula":"","ContentID":"ID_04","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"12","Caption_ID":"ID_13","Caculate_Type":"State","Unit":"","StartBit":"9","BitLength":"1","InvalidValue":"","Formula":"","ContentID":"ID_05","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"13","Caption_ID":"ID_14","Caculate_Type":"Numerical","Unit":"A","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.01","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"14","Caption_ID":"ID_15","Caculate_Type":"Numerical","Unit":"℃","StartBit":"0","BitLength":"8","InvalidValue":"254","Formula":"A-48","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"15","Caption_ID":"ID_16","Caculate_Type":"Numerical","Unit":"℃","StartBit":"0","BitLength":"8","InvalidValue":"254","Formula":"A-48","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"16","Caption_ID":"ID_17","Caculate_Type":"Numerical","Unit":"nm","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.01","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"17","Caption_ID":"ID_18","Caculate_Type":"Numerical","Unit":"nm","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.01","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"18","Caption_ID":"ID_19","Caculate_Type":"Numerical","Unit":"V","StartBit":"0","BitLength":"16","InvalidValue":"65534","Formula":"A*0.01","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"19","Caption_ID":"ID_28","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"80","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"20","Caption_ID":"ID_29","Caculate_Type":"ASCII","Unit":"","StartBit":"72","BitLength":"24","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"21","Caption_ID":"ID_30","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"120","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"22","Caption_ID":"ID_31","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"40","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"23","Caption_ID":"ID_32","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"24","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"24","Caption_ID":"ID_33","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"80","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"25","Caption_ID":"ID_34","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"136","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":"VinCode"},
+{"ByteAnalyse_ID":"26","Caption_ID":"ID_35","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"80","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"27","Caption_ID":"ID_36","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"80","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"28","Caption_ID":"ID_37","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"80","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":"TesterSN"},
+{"ByteAnalyse_ID":"29","Caption_ID":"ID_38","Caculate_Type":"ASCII","Unit":"","StartBit":"0","BitLength":"24","InvalidValue":"","Formula":"","ContentID":"","Format":"STRING","StoreName":"ProgramYearMonthDay"},
+{"ByteAnalyse_ID":"30","Caption_ID":"ID_70","Caculate_Type":"State","Unit":"","StartBit":"7","BitLength":"1","InvalidValue":"","Formula":"","ContentID":"ID_06","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"31","Caption_ID":"ID_15","Caculate_Type":"Numerical","Unit":"℃","StartBit":"0","BitLength":"8","InvalidValue":"254","Formula":"A-48","ContentID":"","Format":"STRING","StoreName":""},
+{"ByteAnalyse_ID":"32","Caption_ID":"ID_16","Caculate_Type":"Numerical","Unit":"℃","StartBit":"8","BitLength":"8","InvalidValue":"254","Formula":"A-48","ContentID":"","Format":"STRING","StoreName":""}
+],
+"ReadECUInf":[
+{"Caption_ID":"ID_30","SendCommand_ID":"CMD22F187","ReceiveCommand_ID":"CMD62F187","WriteECU_ID":""},
+{"Caption_ID":"ID_31","SendCommand_ID":"CMD22F18A","ReceiveCommand_ID":"CMD62F18A","WriteECU_ID":""},
+{"Caption_ID":"ID_32","SendCommand_ID":"CMD22F18B","ReceiveCommand_ID":"CMD62F18B","WriteECU_ID":""},
+{"Caption_ID":"ID_33","SendCommand_ID":"CMD22F18C","ReceiveCommand_ID":"CMD62F18C","WriteECU_ID":""},
+{"Caption_ID":"ID_34","SendCommand_ID":"CMD22F190","ReceiveCommand_ID":"CMD62F190","WriteECU_ID":"F190"},
+{"Caption_ID":"ID_35","SendCommand_ID":"CMD22F195","ReceiveCommand_ID":"CMD62F195","WriteECU_ID":""},
+{"Caption_ID":"ID_36","SendCommand_ID":"CMD22F197","ReceiveCommand_ID":"CMD62F197","WriteECU_ID":""},
+{"Caption_ID":"ID_37","SendCommand_ID":"CMD22F198","ReceiveCommand_ID":"CMD62F198","WriteECU_ID":""},
+{"Caption_ID":"ID_38","SendCommand_ID":"CMD22F199","ReceiveCommand_ID":"CMD62F199","WriteECU_ID":""}
+],
+"WriteECUInf":[
+{"WriteECU_ID":"F190","Caption_ID":"ID_34","SendCommand_ID":"CMD2EF190","ReceiveCommand_ID":"CMD300000"},
+{"WriteECU_ID":"F190","Caption_ID":"ID_34","SendCommand_ID":"CMDF19021","ReceiveCommand_ID":""},
+{"WriteECU_ID":"F190","Caption_ID":"ID_34","SendCommand_ID":"CMDF19022","ReceiveCommand_ID":"CMD6EF190"},
+{"WriteECU_ID":"F198","Caption_ID":"ID_37","SendCommand_ID":"CMD2EF198","ReceiveCommand_ID":"CMD300000"},
+{"WriteECU_ID":"F198","Caption_ID":"ID_37","SendCommand_ID":"CMD21F198","ReceiveCommand_ID":"CMD6EF198"},
+{"WriteECU_ID":"F199","Caption_ID":"ID_38","SendCommand_ID":"CMD2EF199","ReceiveCommand_ID":"CMD6EF199"}
+],
+"ReadDataStream":[
+{"Caption_ID":"ID_01","SendCommand_ID":"CMD220101","ReceiveCommand_ID":"CMD620101"},
+{"Caption_ID":"ID_02","SendCommand_ID":"CMD220102","ReceiveCommand_ID":"CMD620102"},
+{"Caption_ID":"ID_03","SendCommand_ID":"CMD220103","ReceiveCommand_ID":"CMD620103"},
+{"Caption_ID":"ID_04","SendCommand_ID":"CMD220104","ReceiveCommand_ID":"CMD620104"},
+{"Caption_ID":"ID_05","SendCommand_ID":"CMD220105","ReceiveCommand_ID":"CMD620105"},
+{"Caption_ID":"ID_06","SendCommand_ID":"CMD220106","ReceiveCommand_ID":"CMD620106"},
+{"Caption_ID":"ID_07","SendCommand_ID":"CMD220107","ReceiveCommand_ID":"CMD620107"},
+{"Caption_ID":"ID_14","SendCommand_ID":"CMD220108","ReceiveCommand_ID":"CMD620108"},
+{"Caption_ID":"ID_15","SendCommand_ID":"CMD220109","ReceiveCommand_ID":"CMD620109"},
+{"Caption_ID":"ID_16","SendCommand_ID":"CMD220110","ReceiveCommand_ID":"CMD620110"},
+{"Caption_ID":"ID_17","SendCommand_ID":"CMD220111","ReceiveCommand_ID":"CMD620111"},
+{"Caption_ID":"ID_18","SendCommand_ID":"CMD220112","ReceiveCommand_ID":"CMD620112"},
+{"Caption_ID":"ID_19","SendCommand_ID":"CMD220113","ReceiveCommand_ID":"CMD620113"}
+],
+"DtcInf":[
+{"Caption_ID":"ID_67","SendCommand_ID":"CMD190100","ReceiveCommand_ID":"CMD590100"},
+{"Caption_ID":"ID_63","SendCommand_ID":"CMD190200","ReceiveCommand_ID":"CMD590200"},
+{"Caption_ID":"ID_68","SendCommand_ID":"CMD190400","ReceiveCommand_ID":"CMD590400"},
+{"Caption_ID":"ID_72","SendCommand_ID":"CMD19AA00","ReceiveCommand_ID":"CMD59AA00"},
+{"Caption_ID":"ID_69","SendCommand_ID":"CMD140000","ReceiveCommand_ID":"CMD540000"}
+],
+"SpecialFunction":[
+{"Caption_ID":"ID_71","SendCommand_ID":"CMD110100","ReceiveCommand_ID":"CMD510100"}
+],
+"SnapshotLib":[
+{"SnapshotDID":"0xDF01","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"02"}]},
+{"SnapshotDID":"0xDF02","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"04"}]},
+{"SnapshotDID":"0xDF03","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"05"}]},
+{"SnapshotDID":"0xDF04","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"06"}]},
+{"SnapshotDID":"0xDF05","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"07"},{"ByteAnalyse_ID":"08"},{"ByteAnalyse_ID":"09"},{"ByteAnalyse_ID":"10"},{"ByteAnalyse_ID":"11"},{"ByteAnalyse_ID":"12"}]},
+{"SnapshotDID":"0xDF06","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"31"},{"ByteAnalyse_ID":"32"}]},
+{"SnapshotDID":"0xDF07","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"13"}]},
+{"SnapshotDID":"0xDF08","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"16"}]},
+{"SnapshotDID":"0xDF09","Byte_Number":"2","SnapshotDID_Data":[{"ByteAnalyse_ID":"17"}]}
+],
+"DTCLib":[
+{"DTC":"P100300","FaultCode":"0x100300","Caption_ID":"ID_44","FaultCauses_ID":"ID_00","CorrecticveAction_ID":"ID_00"},
+{"DTC":"P100400","FaultCode":"0x100400","Caption_ID":"ID_45","FaultCauses_ID":"ID_01","CorrecticveAction_ID":"ID_01"},
+{"DTC":"P100500","FaultCode":"0x100500","Caption_ID":"ID_46","FaultCauses_ID":"ID_02","CorrecticveAction_ID":"ID_02"},
+{"DTC":"P100600","FaultCode":"0x100600","Caption_ID":"ID_47","FaultCauses_ID":"ID_03","CorrecticveAction_ID":"ID_03"},
+{"DTC":"P100700","FaultCode":"0x100700","Caption_ID":"ID_48","FaultCauses_ID":"ID_04","CorrecticveAction_ID":"ID_04"},
+{"DTC":"P100800","FaultCode":"0x100800","Caption_ID":"ID_49","FaultCauses_ID":"ID_05","CorrecticveAction_ID":"ID_05"},
+{"DTC":"P100900","FaultCode":"0x100900","Caption_ID":"ID_50","FaultCauses_ID":"ID_06","CorrecticveAction_ID":"ID_06"},
+{"DTC":"P100A00","FaultCode":"0x100A00","Caption_ID":"ID_51","FaultCauses_ID":"ID_07","CorrecticveAction_ID":"ID_07"},
+{"DTC":"P100B00","FaultCode":"0x100B00","Caption_ID":"ID_52","FaultCauses_ID":"ID_08","CorrecticveAction_ID":"ID_08"},
+{"DTC":"P100C00","FaultCode":"0x100C00","Caption_ID":"ID_53","FaultCauses_ID":"ID_09","CorrecticveAction_ID":"ID_09"},
+{"DTC":"P100D00","FaultCode":"0x100D00","Caption_ID":"ID_54","FaultCauses_ID":"ID_10","CorrecticveAction_ID":"ID_10"},
+{"DTC":"P100E00","FaultCode":"0x100E00","Caption_ID":"ID_55","FaultCauses_ID":"ID_11","CorrecticveAction_ID":"ID_11"},
+{"DTC":"P100F00","FaultCode":"0x100F00","Caption_ID":"ID_56","FaultCauses_ID":"ID_12","CorrecticveAction_ID":"ID_12"},
+{"DTC":"P101000","FaultCode":"0x101000","Caption_ID":"ID_57","FaultCauses_ID":"ID_13","CorrecticveAction_ID":"ID_13"},
+{"DTC":"P101100","FaultCode":"0x101100","Caption_ID":"ID_58","FaultCauses_ID":"ID_14","CorrecticveAction_ID":"ID_14"},
+{"DTC":"UC07300","FaultCode":"0xC07300","Caption_ID":"ID_59","FaultCauses_ID":"ID_15","CorrecticveAction_ID":"ID_15"},
+{"DTC":"UC10200","FaultCode":"0xC10200","Caption_ID":"ID_60","FaultCauses_ID":"ID_16","CorrecticveAction_ID":"ID_16"}
+]
+}

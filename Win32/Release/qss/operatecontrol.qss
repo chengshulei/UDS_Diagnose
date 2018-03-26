@@ -1,0 +1,84 @@
+
+
+QListWidget{  
+	border:none;
+    background:#FFFFE0;  
+	font-size:15px;   
+    color:black;   
+}  
+QListWidget::item {  
+    height:150;
+	border-bottom:1px solid #E4E4E4;
+	  
+}  
+QListWidget::item:hover {  
+	background:#E4E4E4;
+    padding:0px;  
+    margin:0px;  
+}  
+QListWidget::item:selected {  
+	background:#2CA7F8;
+    padding:0px;  
+    margin:0px;  
+	outline:0px;
+
+	font-size:15px;   
+    color:white; 
+}  
+QListWidget:focus{outline: none;}
+
+#QListWidget::item:selected:!active {  
+    border-width: 0px ;  
+}  
+#QListWidget::item:selected:active {  
+    border-width: 1px;  
+}  
+
+QLabel{
+	font:Bold 20px;
+	font-family: 仿宋;
+}
+
+QLineEdit{
+	height:30;
+	border: 1px solid #9d9087;
+	border-radius:3px;
+	background:white;
+	selection-background-color:green;
+	font-size:14px;
+}
+QLineEdit:hover{
+	border: 1px solid blue;
+}
+
+QPushButton#pushButton {
+	background-color: #A4D3EE;
+	border-style: outset;
+	border-width:1px;
+	border-radius:5px;
+	border-color: #dddddd;
+	font: bold 20px;
+	font-family:"仿宋";
+	min-width:10em;
+	padding:6px;
+}
+QPushButton#pushButton:pressed {
+	background-color: #9AC0CD;
+	border-style: inset;
+}
+
+QPushButton#pushButton_2 {
+	background-color: #A4D3EE;
+	border-style: outset;
+	border-width:1px;
+	border-radius:5px;
+	border-color: #dddddd;
+	font: bold 20px;
+	font-family:"仿宋";
+	min-width:10em;
+	padding:6px;
+}
+QPushButton#pushButton_2:pressed {
+	background-color: #9AC0CD;
+	border-style: inset;
+}

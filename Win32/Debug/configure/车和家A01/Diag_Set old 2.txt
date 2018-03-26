@@ -1,0 +1,296 @@
+﻿{
+"Function":{
+"ReadECUInf":{"Index":"ReadECUInf","Name":"控制器信息","Type":"0"},
+"ReadDataStream":{"Index":"ReadDataStream","Name":"实时数据","Type":"0"}
+},
+"String_Show":[
+{"Caption ID":"ID_00","Caption":"VCU指示驱动电机控制命令"},
+{"Caption_ID":"ID_01","Caption":"VCU使能MCU控制命令"},
+{"Caption ID":"ID_02","Caption":"VCU指示驱动电机工作模式控制命令"},
+{"Caption ID":"ID_03","Caption":"VCU指示驱动电机转向控制命令"},
+{"Caption ID":"ID_04","Caption":"VCU指示当前实际档位信号"},
+{"Caption ID":"ID_05","Caption":"VCU指示刹车踏板开关状态"},
+{"Caption ID":"ID_06","Caption":"VCU指示当前车辆运行模式"},
+{"Caption ID":"ID_07","Caption":"MCU指示驱动电机工作状态1"},
+{"Caption ID":"ID_08","Caption":"MCU指示初始化状态"},
+{"Caption ID":"ID_09","Caption":"驱动电机当前状态"},
+{"Caption ID":"ID_10","Caption":"MCU指示驱动电机工作模式"},
+{"Caption ID":"ID_11","Caption":"驱动电机当前旋转方向"},
+{"Caption ID":"ID_12","Caption":"驱动电机控制器高压检测完成标志"},
+{"Caption ID":"ID_13","Caption":"EEPROM写数据完成标志位"},
+{"Caption ID":"ID_14","Caption":"驱动电机控制器高压放电完成标志位"},
+{"Caption ID":"ID_15","Caption":"驱动电机控制器低压下电请求标志位"},
+{"Caption ID":"ID_16","Caption":"驱动电机系统降功率请求标志位"},
+{"Caption ID":"ID_17","Caption":"驱动电机控制器关闭使能请求标志位"},
+{"Caption ID":"ID_18","Caption":"MCU指示驱动电机工作状态2"},
+{"Caption ID":"ID_19","Caption":"MCU指示直流输入端电压"},
+{"Caption ID":"ID_20","Caption":"MCU指示直流输入端电流（预留）"},
+{"Caption ID":"ID_21","Caption":"MCU接收到的转矩指令"},
+{"Caption ID":"ID_22","Caption":"MCU接收到的转速指令"},
+{"Caption ID":"ID_23","Caption":"电机当前转矩实际值"},
+{"Caption ID":"ID_24","Caption":"电机当前转速实际值"},
+{"Caption ID":"ID_25","Caption":"MCU指示驱动电机控制器温度"},
+{"Caption ID":"ID_26","Caption":"驱动电机当前温度"},
+{"Caption ID":"ID_27","Caption":"MCU指示驱动电机工作状态3"},
+{"Caption ID":"ID_28","Caption":"MCU指示D轴电流指令"},
+{"Caption ID":"ID_29","Caption":"MCU指示D轴电流反馈"},
+{"Caption ID":"ID_30","Caption":"MCU指示Q轴电流指令"},
+{"Caption ID":"ID_31","Caption":"MCU指示Q轴电流反馈"},
+{"Caption ID":"ID_32","Caption":"MCU指示D轴电压"},
+{"Caption ID":"ID_33","Caption":"MCU指示Q轴电压"},
+{"Caption ID":"ID_34","Caption":"MCU指示低压电源电压"},
+{"Caption ID":"ID_35","Caption":"MCU指示故障等级"},
+{"Caption ID":"ID_36","Caption":"应用程序编程日期"},
+{"Caption ID":"ID_37","Caption":"零件编号"},
+{"Caption ID":"ID_38","Caption":"系统供应商号"},
+{"Caption ID":"ID_39","Caption":"ECU生产日期"},
+{"Caption ID":"ID_40","Caption":"车辆生产日期"},
+{"Caption ID":"ID_41","Caption":"车辆VIN号"},
+{"Caption ID":"ID_42","Caption":"硬件版本号"},
+{"Caption ID":"ID_43","Caption":"软件版本号"},
+{"Caption ID":"ID_44","Caption":"MCU直流输入端欠压（二级）"},
+{"Caption ID":"ID_45","Caption":"MCU直流输入端欠压（三级）"},
+{"Caption ID":"ID_46","Caption":"MCU直流输入端过压"},
+{"Caption ID":"ID_47","Caption":"电机定子线圈过温（二级）"},
+{"Caption ID":"ID_48","Caption":"电机定子线圈过温（三级）"},
+{"Caption ID":"ID_49","Caption":"MCU铝板过温（二级）"},
+{"Caption ID":"ID_50","Caption":"MCU铝板过温（三级）"},
+{"Caption ID":"ID_51","Caption":"控制器温度传感器故障"},
+{"Caption ID":"ID_52","Caption":"电机温度传感器故障"},
+{"Caption ID":"ID_53","Caption":"EEPROM故障"},
+{"Caption ID":"ID_54","Caption":"过流故障"},
+{"Caption ID":"ID_55","Caption":"电流采样回路故障"},
+{"Caption ID":"ID_56","Caption":"电机编码器故障"},
+{"Caption ID":"ID_57","Caption":"辅助电源欠压故障"},
+{"Caption ID":"ID_58","Caption":"辅助电源过压故障"},
+{"Caption ID":"ID_59","Caption":"电机超速故障（二级）"},
+{"Caption ID":"ID_60","Caption":"电机超速故障（三级）"},
+{"Caption ID":"ID_61","Caption":"与VCU通讯丢失"},
+{"Caption ID":"ID_62","Caption":"MCU指示BusOff"},
+{"Caption ID":"ID_63","Caption":"读ECU故障"},
+{"Caption ID":"ID_64","Caption":"清ECU故障"}
+],
+"Content":
+{
+"ID_00":[
+{"Signal_Value":"0","Show":"Disable"},
+{"Signal_Value":"1","Show":"Enable"}
+],
+"ID_01":[
+{"Signal_Value":"0","Show":"待机模式"},
+{"Signal_Value":"1","Show":"转矩模式"},
+{"Signal_Value":"2","Show":"转速模式"},
+{"Signal_Value":"3","Show":"Void"}
+],
+"ID_02":[
+{"Signal_Value":"0","Show":"待机"},
+{"Signal_Value":"1","Show":"正转指令"},
+{"Signal_Value":"2","Show":"反转指令"},
+{"Signal_Value":"3","Show":"Void"}
+],
+"ID_03":[
+{"Signal_Value":"0","Show":"Void"},
+{"Signal_Value":"1","Show":"R档"},
+{"Signal_Value":"2","Show":"N档"},
+{"Signal_Value":"3","Show":"D档"},
+{"Signal_Value":"4","Show":"P档"},
+{"Signal_Value":"other","Show":"Void"}
+],
+"ID_04":[
+{"Signal_Value":"0","Show":"未踩制动踏板"},
+{"Signal_Value":"1","Show":"已踩制动踏板"}
+],
+"ID_05":[
+{"Signal_Value":"0","Show":"Stop Mode"},
+{"Signal_Value":"1","Show":"Driving Mode"},
+{"Signal_Value":"2","Show":"On-Board Charging Mode"},
+{"Signal_Value":"3","Show":"Reserved"}
+],
+"ID_06":[
+{"Signal_Value":"0","Show":"初始化未完成"},
+{"Signal_Value":"1","Show":"初始化已完成"}
+],
+"ID_07":[
+{"Signal_Value":"0","Show":"待机状态"},
+{"Signal_Value":"1","Show":"电动状态"},
+{"Signal_Value":"2","Show":"发电状态"},
+{"Signal_Value":"3","Show":"Void"}
+],
+"ID_08":[
+{"Signal_Value":"0","Show":"待机模式"},
+{"Signal_Value":"1","Show":"转矩模式"},
+{"Signal_Value":"2","Show":"转速模式"},
+{"Signal_Value":"3","Show":"Void"}
+],
+"ID_09":[
+{"Signal_Value":"0","Show":"待机状态"},
+{"Signal_Value":"1","Show":"正转（前进）"},
+{"Signal_Value":"2","Show":"反转（倒车）"},
+{"Signal_Value":"3","Show":"Void"}
+],
+"ID_10":[
+{"Signal_Value":"0","Show":"未完成"},
+{"Signal_Value":"1","Show":"已完成"}
+],
+"ID_11":[
+{"Signal_Value":"0","Show":"全功率运行"},
+{"Signal_Value":"1","Show":"降功率运行"}
+],
+"ID_12":[
+{"Signal_Value":"0","Show":"不关使能"},
+{"Signal_Value":"1","Show":"关使能"}
+],
+"ID_13":[
+{"Signal_Value":"0","Show":"Nomal"},
+{"Signal_Value":"1","Show":"Level 1"},
+{"Signal_Value":"2","Show":"Level 2"},
+{"Signal_Value":"3","Show":"Level 3"},
+{"Signal_Value":"4","Show":"Level 4"},
+{"Signal_Value":"5","Show":"Level 5"},
+{"Signal_Value":"6","Show":"Reserved"},
+{"Signal_Value":"7","Show":"Reserved"}
+]
+},
+"SendCommand":[
+{"Command ID":"CMD100100","Frame ID":"0x793","Length":"8","Data":"0x02 0x10 0x01 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD100200","Frame ID":"0x793","Length":"8","Data":"0x02 0x10 0x02 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD100300","Frame ID":"0x793","Length":"8","Data":"0x02 0x10 0x03 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD270100","Frame ID":"0x793","Length":"8","Data":"0x02 0x27 0x01 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD270200","Frame ID":"0x793","Length":"8","Data":"0x06 0x27 0x02 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD3E0000","Frame ID":"0x793","Length":"8","Data":"0x02 0x3E 0x00 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD190100","Frame ID":"0x793","Length":"8","Data":"0x03 0x19 0x01 0x01 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD190200","Frame ID":"0x793","Length":"8","Data":"0x03 0x19 0x02 0x01 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD140000","Frame ID":"0x793","Length":"8","Data":"0x04 0x14 0x00 0x00 0x00 0x00 0x00 0x00"},
+{"Command_ID":"CMD220200","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0x02 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD220201","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0x02 0x01 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD220202","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0x02 0x02 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD220203","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0x02 0x03 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD220204","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0x02 0x04 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD22F184","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0xF1 0x84 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD22F187","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0xF1 0x87 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD22F18A","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0xF1 0x8A 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD22F18B","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0xF1 0x8B 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD22F190","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0xF1 0x90 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD22F193","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0xF1 0x93 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD22F195","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0xF1 0x95 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD220100","Frame ID":"0x793","Length":"8","Data":"0x03 0x22 0x01 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD2EF184","Frame ID":"0x793","Length":"8","Data":"0x03 0x2E 0xF1 0x84 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD2E0100","Frame ID":"0x793","Length":"8","Data":"0x03 0x2E 0x01 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD2EF190","Frame ID":"0x793","Length":"8","Data":"0x03 0x2E 0xF1 0x90 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD110100","Frame ID":"0x793","Length":"8","Data":"0x02 0x11 0x01 0x00 0x00 0x00 0x00 0x00"},
+{"Command ID":"CMD850100","Frame ID":"0x793","Length":"8","Data":"0x02 0x85 0x01 0x00 0x00 0x00 0x00 0x00"}
+],
+"DataIdentifier":
+  {
+"DID_00":[
+  {"Signal_ID":"0","Caption_ID":"ID_01","Unit":"NULL","Command_ID":"CMD220200","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:0;Length:1;ContentID:ID_00","Format":"STRING"},
+  {"Signal_ID":"1","Caption_ID":"ID_02","Unit":"NULL","Command_ID":"CMD220200","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:1;Length:2;ContentID:ID_01","Format":"STRING"},
+  {"Signal_ID":"2","Caption_ID":"ID_03","Unit":"NULL","Command_ID":"CMD220200","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:3;Length:2;ContentID:ID_02","Format":"STRING"},
+  {"Signal_ID":"3","Caption_ID":"ID_04","Unit":"NULL","Command_ID":"CMD220200","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:0;Length:3;ContentID:ID_03","Format":"STRING"},
+  {"Signal_ID":"4","Caption_ID":"ID_05","Unit":"NULL","Command_ID":"CMD220200","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:3;Length:1;ContentID:ID_04","Format":"STRING"},
+  {"Signal_ID":"5","Caption_ID":"ID_06","Unit":"NULL","Command_ID":"CMD220200","Valid_Byte_Offset":"5","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:0;Length:8;ContentID:ID_05","Format":"STRING"}
+  ],
+  "DID_01":[
+  {"Signal_ID":"0","Caption_ID":"ID_08","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:0;Length:1;ContentID:ID_06","Format":"STRING"},
+  {"Signal_ID":"1","Caption_ID":"ID_09","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:1;Length:2;ContentID:ID_07","Format":"STRING"},
+  {"Signal_ID":"2","Caption_ID":"ID_10","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:3;Length:2;ContentID:ID_08","Format":"STRING"},
+  {"Signal_ID":"3","Caption_ID":"ID_11","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:6;Length:2;ContentID:ID_09","Format":"STRING"},
+  {"Signal_ID":"4","Caption_ID":"ID_12","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:0;Length:1;ContentID:ID_10","Format":"STRING"},
+  {"Signal_ID":"5","Caption_ID":"ID_13","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:1;Length:1;ContentID:ID_10","Format":"STRING"},
+  {"Signal_ID":"6","Caption_ID":"ID_14","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:2;Length:1;ContentID:ID_10","Format":"STRING"},
+  {"Signal_ID":"7","Caption_ID":"ID_15","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:3;Length:1;ContentID:ID_10","Format":"STRING"},
+  {"Signal_ID":"8","Caption_ID":"ID_16","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:4;Length:1;ContentID:ID_11","Format":"STRING"},
+  {"Signal_ID":"9","Caption_ID":"ID_17","Unit":"NULL","Command_ID":"CMD220201","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:5;Length:1;ContentID:ID_12","Format":"STRING"}
+  ],
+  "DID_02":[
+  {"Signal_ID":"0","Caption_ID":"ID_19","Unit":"V","Command_ID":"CMD220202","Valid_Byte_Offset":"3","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"A*0.02","Format":"STRING"},
+  {"Signal_ID":"1","Caption_ID":"ID_20","Unit":"A","Command_ID":"CMD220202","Valid_Byte_Offset":"5","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"-1310","Format":"STRING"},
+  {"Signal_ID":"2","Caption_ID":"ID_21","Unit":"Nm","Command_ID":"CMD220202","Valid_Byte_Offset":"7","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"-1310","Format":"STRING"},
+  {"Signal_ID":"3","Caption_ID":"ID_22","Unit":"rpm","Command_ID":"CMD220202","Valid_Byte_Offset":"9","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"A-19660","Format":"STRING"},
+  {"Signal_ID":"4","Caption_ID":"ID_23","Unit":"Nm","Command_ID":"CMD220202","Valid_Byte_Offset":"11","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"A*0.04-1310","Format":"STRING"},
+  {"Signal_ID":"5","Caption_ID":"ID_24","Unit":"rpm","Command_ID":"CMD220202","Valid_Byte_Offset":"13","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"A*0.6-19660","Format":"STRING"},
+  {"Signal_ID":"6","Caption_ID":"ID_25","Unit":"℃","Command_ID":"CMD220202","Valid_Byte_Offset":"15","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"A-48","Format":"STRING"},
+  {"Signal_ID":"7","Caption_ID":"ID_26","Unit":"℃","Command_ID":"CMD220202","Valid_Byte_Offset":"16","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"A-48","Format":"STRING"}
+  ],
+  "DID_03":[
+  {"Signal_ID":"0","Caption_ID":"ID_28","Unit":"A","Command_ID":"CMD220203","Valid_Byte_Offset":"3","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"A*0.04-1310","Format":"STRING"},
+  {"Signal_ID":"1","Caption_ID":"ID_29","Unit":"A","Command_ID":"CMD220203","Valid_Byte_Offset":"5","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"-1310","Format":"STRING"},
+  {"Signal_ID":"2","Caption_ID":"ID_30","Unit":"A","Command_ID":"CMD220203","Valid_Byte_Offset":"7","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"-1310","Format":"STRING"},
+  {"Signal_ID":"3","Caption_ID":"ID_31","Unit":"A","Command_ID":"CMD220203","Valid_Byte_Offset":"9","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"-1310","Format":"STRING"},
+  {"Signal_ID":"4","Caption_ID":"ID_32","Unit":"V","Command_ID":"CMD220203","Valid_Byte_Offset":"11","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"-1310","Format":"STRING"},
+  {"Signal_ID":"5","Caption_ID":"ID_33","Unit":"V","Command_ID":"CMD220203","Valid_Byte_Offset":"13","Valid_Byte_Number":"2","Caculate_Type":"Numerical","Formula":"-1310","Format":"STRING"},
+  {"Signal_ID":"6","Caption_ID":"ID_34","Unit":"V","Command_ID":"CMD220203","Valid_Byte_Offset":"14","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"0","Format":"STRING"}
+  ],
+  "DID_04":[
+  {"Signal_ID":"0","Caption_ID":"ID_35","Unit":"NULL","Command_ID":"CMD220204","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"State","Formula":"StartBit:0;Length:3;ContentID:ID_13","Format":"STRING"}
+  ], 
+  "DID_05":[
+  {"Signal_ID":"0","Caption_ID":"ID_36","Unit":"NULL","Command_ID":"CMD22F184","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"2000+A","Format":"Date"},
+  {"Signal_ID":"1","Caption_ID":"ID_36","Unit":"NULL","Command_ID":"CMD22F184","Valid_Byte_Offset":"5","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"A","Format":"Date"},
+  {"Signal_ID":"2","Caption_ID":"ID_36","Unit":"NULL","Command_ID":"CMD22F184","Valid_Byte_Offset":"6","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"A","Format":"Date"}
+  ],
+  "DID_06":[
+  {"Signal_ID":"0","Caption_ID":"ID_37","Unit":"NULL","Command_ID":"CMD22F187","Valid_Byte_Offset":"3","Valid_Byte_Number":"12","Caculate_Type":"ASCII","Formula":"NULL","Format":"STRING"}
+  ],
+  "DID_07":[
+  {"Signal_ID":"0","Caption_ID":"ID_38","Unit":"NULL","Command_ID":"CMD22F18A","Valid_Byte_Offset":"3","Valid_Byte_Number":"10","Caculate_Type":"ASCII","Formula":"NULL","Format":"STRING"}
+  ],    
+  "DID_08":[
+  {"Signal_ID":"0","Caption_ID":"ID_39","Unit":"NULL","Command_ID":"CMD22F18B","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"2000+A","Format":"Date"},
+  {"Signal_ID":"1","Caption_ID":"ID_39","Unit":"NULL","Command_ID":"CMD22F18B","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"A","Format":"Date"},
+  {"Signal_ID":"2","Caption_ID":"ID_39","Unit":"NULL","Command_ID":"CMD22F18B","Valid_Byte_Offset":"5","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"A","Format":"Date"}
+  ], 
+  "DID_09":[
+  {"Signal_ID":"0","Caption_ID":"ID_40","Unit":"NULL","Command_ID":"CMD220100","Valid_Byte_Offset":"3","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"2000+A","Format":"Date"},
+  {"Signal_ID":"1","Caption_ID":"ID_40","Unit":"NULL","Command_ID":"CMD220100","Valid_Byte_Offset":"4","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"A","Format":"Date"},
+  {"Signal_ID":"2","Caption_ID":"ID_40","Unit":"NULL","Command_ID":"CMD220100","Valid_Byte_Offset":"5","Valid_Byte_Number":"1","Caculate_Type":"Numerical","Formula":"A","Format":"Date"}
+  ], 
+  "DID_10":[
+  {"Signal_ID":"0","Caption_ID":"ID_41","Unit":"NULL","Command_ID":"CMD22F190","Valid_Byte_Offset":"3","Valid_Byte_Number":"17","Caculate_Type":"ASCII","Formula":"NULL","Format":"STRING"}
+  ],
+  "DID_11":[
+  {"Signal_ID":"0","Caption_ID":"ID_42","Unit":"NULL","Command_ID":"CMD22F193","Valid_Byte_Offset":"3","Valid_Byte_Number":"2","Caculate_Type":"ASCII","Formula":"NULL","Format":"STRING"}
+  ], 
+  "DID_12":[
+  {"Signal_ID":"0","Caption_ID":"ID_43","Unit":"NULL","Command_ID":"CMD22F195","Valid_Byte_Offset":"3","Valid_Byte_Number":"2","Caculate_Type":"ASCII","Formula":"NULL","Format":"STRING"}
+  ]
+},
+"ReadECUInf":[
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_05","Caption_Index":"String_Show","Caption_ID":"ID_36"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_06","Caption_Index":"String_Show","Caption_ID":"ID_37"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_07","Caption_Index":"String_Show","Caption_ID":"ID_38"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_08","Caption_Index":"String_Show","Caption_ID":"ID_39"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_09","Caption_Index":"String_Show","Caption_ID":"ID_40"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_10","Caption_Index":"String_Show","Caption_ID":"ID_41"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_11","Caption_Index":"String_Show","Caption_ID":"ID_42"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_12","Caption_Index":"String_Show","Caption_ID":"ID_43"}
+],
+"ReadDataStream":[
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_00","Caption_Index":"String_Show","Caption_ID":"ID_00"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_01","Caption_Index":"String_Show","Caption_ID":"ID_07"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_02","Caption_Index":"String_Show","Caption_ID":"ID_18"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_03","Caption_Index":"String_Show","Caption_ID":"ID_27"},
+{"Conten_Index":"DataIdentifier","Content_ID":"DID_04","Caption_Index":"String_Show","Caption_ID":"ID_35"}
+],
+"DTCLib":[
+{"DTC":"P110116","Caption_ID":"ID_44"},
+{"DTC":"P110216","Caption_ID":"ID_45"},
+{"DTC":"P110317","Caption_ID":"ID_46"},
+{"DTC":"P110498","Caption_ID":"ID_47"},
+{"DTC":"P110598","Caption_ID":"ID_48"},
+{"DTC":"P110698","Caption_ID":"ID_49"},
+{"DTC":"P110798","Caption_ID":"ID_50"},
+{"DTC":"P110800","Caption_ID":"ID_51"},
+{"DTC":"P110900","Caption_ID":"ID_52"},
+{"DTC":"P110A00","Caption_ID":"ID_53"},
+{"DTC":"P110B00","Caption_ID":"ID_54"},
+{"DTC":"P110C00","Caption_ID":"ID_55"},
+{"DTC":"P110D00","Caption_ID":"ID_56"},
+{"DTC":"P110E16","Caption_ID":"ID_57"},
+{"DTC":"P110F17","Caption_ID":"ID_58"},
+{"DTC":"P111000","Caption_ID":"ID_59"},
+{"DTC":"P111100","Caption_ID":"ID_60"},
+{"DTC":"P111287","Caption_ID":"ID_61"},
+{"DTC":"P111388","Caption_ID":"ID_62"}
+]
+}

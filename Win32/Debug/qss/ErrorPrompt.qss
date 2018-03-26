@@ -1,0 +1,72 @@
+
+
+QDialog#Prompt_Dialog{  
+	border-radius:15px;
+}  
+
+QLabel#prompt_title_label{
+	font:Bold 25px;
+	font-family: "仿宋";
+}
+
+QWidget#prompt_top_widget
+{
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	border-bottom: 1px solid #f5f5f5;
+	background:#ed1941;		   
+}
+
+QWidget#prompt_content_widget
+{
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	/*border-image:url(./image/main.jpg);	*/		
+	background:#FAFAD2;	   
+}
+
+QPushButton#prompt_close_pushButton{
+	border:none;
+	border-image:url(./image/btn_close_normal.png); 
+}
+
+QPushButton#prompt_close_pushButton::hover{
+	background:none;
+	border:none;
+	height:16px;
+	width:16px;
+	background:#eaeaea;
+}
+QPushButton#prompt_close_pushButton::pressed{
+	background:none;
+	border:none;
+	background:#eaeaea;
+	border-image:url(./image/btn_close_hover.png); 
+}
+
+QPushButton#prompt_ico_pushButton{
+	border:none;
+	border-image:url(./image/error_prompt.png); 
+}
+ 
+QLabel#prompt_message_label{
+	font:20px;
+	font-family:"System";
+
+}
+
+QPushButton#prompt_sure_pushButton {
+	background-color: #ed1941;
+	border-style: outset;
+	border-width:1px;
+	border-radius:5px;
+	border-color: #dddddd;
+	font:Bold 20px;
+	font-family: "仿宋";
+	min-width:10em;
+	padding:6px;
+}
+QPushButton#prompt_sure_pushButton:pressed {
+	background-color: #ef5b9c;
+	border-style: inset;
+}

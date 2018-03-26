@@ -1,0 +1,101 @@
+
+
+QMainWindow{  
+	border-radius:15px;
+}  
+
+QLabel#title_label{
+	font:Bold 25px;
+	font-family: "Arial";
+}
+
+QWidget#top_widget
+{
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	/*border-bottom: 1px solid #f5f5f5;*/
+	background:#afdfe4;		   
+}
+
+QWidget#content_widget
+{
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;	
+	background:#FAFAD2;	   
+}
+
+QPushButton#close_pushButton{
+	border:none;
+	border-image:url(./image/btn_close_normal.png); 
+}
+
+QPushButton#close_pushButton::hover{
+	background:none;
+	border:none;
+	height:16px;
+	width:16px;
+	background:#eaeaea;
+}
+QPushButton#close_pushButton::pressed{
+	background:none;
+	border:none;
+	background:#eaeaea;
+	border-image:url(./image/btn_close_hover.png); 
+}
+
+QPushButton#min_pushButton{
+	background:none;
+	border:none;
+	border-image:url(./image/btn_min_normal.png); 
+}
+
+QPushButton#min_pushButton::hover{
+	background:none;
+	border:none;
+	height:16px;
+	width:16px;
+	background:#eaeaea;
+}
+
+QPushButton#min_pushButton::pressed{
+	background:none;
+	border:none;
+	background:#eaeaea;
+	border-image:url(./image/btn_min_hover.png); 
+}
+
+
+
+QListWidget{  
+	border:none;
+    background:#FFFFE0;  
+	font-size:15px;   
+    color:black;   
+}  
+QListWidget::item {  
+     height:60;
+	 border-bottom:1px solid #E4E4E4;
+	  
+}  
+QListWidget::item:hover {  
+	 background:#E4E4E4;
+     padding:0px;  
+     margin:0px;  
+}  
+QListWidget::item:selected {  
+	 background:#2CA7F8;
+     padding:0px;  
+     margin:0px;  
+	 outline:0px;
+
+	 font-size:15px;   
+     color:white; 
+}  
+QListWidget:focus{outline: none;}
+
+#QListWidget::item:selected:!active {  
+     border-width: 0px ;  
+}  
+#QListWidget::item:selected:active {  
+     border-width: 1px;  
+}  

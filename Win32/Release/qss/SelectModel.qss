@@ -1,0 +1,52 @@
+
+
+#QDialog{  
+	border-radius:15px;
+}  
+
+
+
+QWidget
+{
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;	
+	background:#d3d7d4;	   
+}
+
+QToolTip
+{
+	/*border-bottom-left-radius:8px;*/
+	/*border-bottom-right-radius:8px;	*/
+	border:2px solid green;
+	border-radius:4px;
+	background:#dddddd;	   
+	padding:2px;
+	font:Bold 15px;
+	font-family: "仿宋";
+}
+ 
+
+
+QToolButton {
+    width:230px;
+	height:230px;
+	background-color: #f6f5ec;
+	border-style: outset;
+	border-width:1px;
+	border-radius:5px;
+	border-color: #dddddd;
+	font:Bold 20px;
+	font-family: "仿宋";
+	min-width:10em;
+	padding:6px;
+}
+
+QToolButton:hover {
+	background-color: #426ab3;
+	/*border-style: inset;*/
+}
+
+QToolButton:pressed {
+	background-color: #afb4db;
+	border-style: inset;
+}

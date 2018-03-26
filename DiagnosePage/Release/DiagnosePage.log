@@ -1,0 +1,153 @@
+﻿生成启动时间为 2018/3/26 14:49:31。
+     1>项目“C:\Users\chengshulei.GLBPOWER\Documents\Visual Studio 2013\Projects\DiagnosePage_20180118\DiagnosePage\DiagnosePage.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>CustomBuild:
+         Moc'ing DiagnosePage.h...
+         Moc'ing CommunicationPage.h...
+         Moc'ing CommunicationControl.h...
+         Moc'ing DealSettingFile.h...
+         Moc'ing Prompt.h...
+         Moc'ing OperateControl.h...
+         Moc'ing LoadDialog.h...
+         Moc'ing RoutineControl.h...
+         Moc'ing WriteECUPage.h...
+         Moc'ing SpecialFunction.h...
+         Moc'ing DealFault.h...
+         Moc'ing ReadECU.h...
+         Moc'ing ReadRealTimeData.h...
+         Moc'ing SelectModelPage.h...
+         Rcc'ing DiagnosePage.qrc...
+     1>RCC : warning : No resources in 'C:\Users\chengshulei.GLBPOWER\Documents\Visual Studio 2013\Projects\DiagnosePage_20180118\DiagnosePage\DiagnosePage.qrc'.
+         
+         Uic'ing Diagnosis.ui...
+         Uic'ing SelectModel.ui...
+         Uic'ing ECU.ui...
+         Uic'ing RealTimeData.ui...
+         Uic'ing Fault.ui...
+         Uic'ing Special.ui...
+         Uic'ing writeECU.ui...
+         Uic'ing Communication.ui...
+         Uic'ing PromptDialog.ui...
+         Uic'ing Control.ui...
+         Uic'ing OControl.ui...
+         Uic'ing RControl.ui...
+         Uic'ing Loading.ui...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.7.1\5.7\msvc2013\include /I.\GeneratedFiles\Release /IC:\Qt\Qt5.7.1\5.7\msvc2013\include\QtCore /IC:\Qt\Qt5.7.1\5.7\msvc2013\include\QtGui /IC:\Qt\Qt5.7.1\5.7\msvc2013\include\QtWidgets /ID:\boost_1_63_0 /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CommunicationControl.cpp CommunicationPage.cpp DealFault.cpp DealSettingFile.cpp DiagnosePage.cpp GeneratedFiles\Release\moc_CommunicationControl.cpp GeneratedFiles\Release\moc_CommunicationPage.cpp GeneratedFiles\Release\moc_DealFault.cpp GeneratedFiles\Release\moc_DealSettingFile.cpp GeneratedFiles\Release\moc_DiagnosePage.cpp GeneratedFiles\Release\moc_LoadDialog.cpp GeneratedFiles\Release\moc_OperateControl.cpp GeneratedFiles\Release\moc_Prompt.cpp GeneratedFiles\Release\moc_ReadECU.cpp GeneratedFiles\Release\moc_ReadRealTimeData.cpp GeneratedFiles\Release\moc_RoutineControl.cpp GeneratedFiles\Release\moc_SelectModelPage.cpp GeneratedFiles\Release\moc_SpecialFunction.cpp GeneratedFiles\Release\moc_WriteECUPage.cpp LoadDialog.cpp Log.cpp main.cpp OperateControl.cpp Prompt.cpp ReadECU.cpp ReadRealTimeData.cpp RoutineControl.cpp SelectModelPage.cpp SpecialFunction.cpp WriteECUPage.cpp
+         CommunicationControl.cpp
+         CommunicationPage.cpp
+         DealFault.cpp
+         DealSettingFile.cpp
+         DiagnosePage.cpp
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+         moc_CommunicationControl.cpp
+         moc_CommunicationPage.cpp
+         moc_DealFault.cpp
+         moc_DealSettingFile.cpp
+         moc_DiagnosePage.cpp
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+         moc_LoadDialog.cpp
+         moc_OperateControl.cpp
+         moc_Prompt.cpp
+         moc_ReadECU.cpp
+         moc_ReadRealTimeData.cpp
+         moc_RoutineControl.cpp
+         moc_SelectModelPage.cpp
+         moc_SpecialFunction.cpp
+         moc_WriteECUPage.cpp
+         LoadDialog.cpp
+         正在生成代码...
+         正在编译...
+         Log.cpp
+         main.cpp
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+     1>CL : warning : Boost.Coroutine is now deprecated. Please switch to Boost.Coroutine2. To disable this warning message, define BOOST_COROUTINES_NO_DEPRECATION_WARNING.
+         OperateControl.cpp
+         Prompt.cpp
+         ReadECU.cpp
+         ReadRealTimeData.cpp
+         RoutineControl.cpp
+         SelectModelPage.cpp
+         SpecialFunction.cpp
+         WriteECUPage.cpp
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.7.1\5.7\msvc2013\include /I.\GeneratedFiles\Release /IC:\Qt\Qt5.7.1\5.7\msvc2013\include\QtCore /IC:\Qt\Qt5.7.1\5.7\msvc2013\include\QtGui /IC:\Qt\Qt5.7.1\5.7\msvc2013\include\QtWidgets /ID:\boost_1_63_0 /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_DiagnosePage.cpp
+         qrc_DiagnosePage.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /l"0x0409" /nologo /fo"Release\DiagnosePage.res" DiagnosePage.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\chengshulei.GLBPOWER\Documents\Visual Studio 2013\Projects\DiagnosePage_20180118\Win32\Release\\DiagnosePage.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.7.1\5.7\msvc2013\lib /LIBPATH:D:\boost_1_63_0\bin\vc12\lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Widgets.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\chengshulei.GLBPOWER\Documents\Visual Studio 2013\Projects\DiagnosePage_20180118\Win32\Release\DiagnosePage.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\chengshulei.GLBPOWER\Documents\Visual Studio 2013\Projects\DiagnosePage_20180118\Win32\Release\DiagnosePage.lib" /MACHINE:X86 /SAFESEH /SAFESEH:NO Release\DiagnosePage.res
+         Release\CommunicationControl.obj
+         Release\CommunicationPage.obj
+         Release\DealFault.obj
+         Release\DealSettingFile.obj
+         Release\DiagnosePage.obj
+         Release\qrc_DiagnosePage.obj
+         Release\moc_CommunicationControl.obj
+         Release\moc_CommunicationPage.obj
+         Release\moc_DealFault.obj
+         Release\moc_DealSettingFile.obj
+         Release\moc_DiagnosePage.obj
+         Release\moc_LoadDialog.obj
+         Release\moc_OperateControl.obj
+         Release\moc_Prompt.obj
+         Release\moc_ReadECU.obj
+         Release\moc_ReadRealTimeData.obj
+         Release\moc_RoutineControl.obj
+         Release\moc_SelectModelPage.obj
+         Release\moc_SpecialFunction.obj
+         Release\moc_WriteECUPage.obj
+         Release\LoadDialog.obj
+         Release\Log.obj
+         Release\main.obj
+         Release\OperateControl.obj
+         Release\Prompt.obj
+         Release\ReadECU.obj
+         Release\ReadRealTimeData.obj
+         Release\RoutineControl.obj
+         Release\SelectModelPage.obj
+         Release\SpecialFunction.obj
+         Release\WriteECUPage.obj
+         DiagnosePage.vcxproj -> C:\Users\chengshulei.GLBPOWER\Documents\Visual Studio 2013\Projects\DiagnosePage_20180118\Win32\Release\DiagnosePage.exe
+       PostBuildEvent:
+         "C:\Users\chengshulei.GLBPOWER\Documents\Visual Studio 2013\Projects\DiagnosePage_20180118\Win32\Release\\VersionControl.exe"
+         :VCEnd
+         [version]
+         version=2.01.001.0012
+         Log=2017-10-10 17:14:57  1.01.001.0001
+         Log=2017-10-12 11:25:36  1.01.001.0002
+         Log=2017-10-12 13:09:16  1.01.001.0003
+         Log=2017-10-12 13:25:47  1.01.001.0004
+         Log=2017-11-01 18:19:07  1.01.001.0005
+         Log=2017-11-03 16:35:01  1.01.001.0006
+         Log=2017-11-06 10:09:29  1.01.001.0007
+         Log=2017-11-06 11:24:23  1.01.001.0008
+         Log=2017-11-06 13:07:04  1.01.001.0009
+         Log=2017-11-15 10:22:14  1.01.001.0010
+         Log=2017-11-15 10:56:17  1.01.001.0011
+         Log=2017-11-15 11:18:15  1.01.001.0012
+         Log=2017-11-15 14:24:31  1.01.001.0013
+         Log=2017-11-29 17:30:42  1.01.001.0014
+         Log=2017-12-14 16:50:54  1.01.001.0015
+         Log=2017-12-20 15:07:25  1.01.001.0016
+         Log=2018-02-06 16:10:45  2.01.001.0001
+         Log=2018-02-06 17:32:49  2.01.001.0002
+         Log=2018-02-06 17:45:10  2.01.001.0003
+         Log=2018-02-06 18:06:50  2.01.001.0004
+         Log=2018-02-06 18:26:36  2.01.001.0005
+         Log=2018-02-07 11:30:57  2.01.001.0006
+         Log=2018-02-28 10:24:40  2.01.001.0007
+         Log=2018-02-28 10:32:56  2.01.001.0008
+         Log=2018-03-01 10:13:06  2.01.001.0009
+         Log=2018-03-01 16:07:48  2.01.001.0010
+         Log=2018-03-09 15:55:06  2.01.001.0011
+         Log=2018-03-26 14:50:57  2.01.001.0012
+     1>已完成生成项目“C:\Users\chengshulei.GLBPOWER\Documents\Visual Studio 2013\Projects\DiagnosePage_20180118\DiagnosePage\DiagnosePage.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:01:26.26
